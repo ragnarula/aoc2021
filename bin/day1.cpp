@@ -1,8 +1,13 @@
-#include <iostream>
-#include "day1/day1.h"
+#include "solution.h"
 
-int main()
+namespace solution
 {
-    std::cout << "Hello AOC, it's day " << whichDay() << std::endl;
-    return 0;
+    std::string first(const std::vector<std::string>& input)
+    {
+        return "Hello";
+    }
+    std::string second(const std::vector<std::string>& input)
+    {
+        return "World!";
+    }
 }

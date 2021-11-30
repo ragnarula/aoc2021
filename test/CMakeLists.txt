@@ -1,4 +1,4 @@
-add_executable(tests 
+add_executable(tests
     day1-test.cpp
 )
 
