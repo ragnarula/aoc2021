@@ -1,4 +1,5 @@
 add_executable(tests
+    aoc-test.cpp
     stringhelpers-test.cpp
     day1-test.cpp
 )
