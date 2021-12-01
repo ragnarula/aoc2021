@@ -31,7 +31,7 @@ namespace day1
     {
         std::vector<int> ints(input.size());
         std::transform(input.begin(), input.end(), ints.begin(), [](auto& elem) -> int { return std::stoi(elem);});
-        
+
         std::vector<std::tuple<int, int, int>> windows; 
         for(int i = 0; i < (int)ints.size() - 2; ++i)
         {

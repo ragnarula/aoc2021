@@ -10,7 +10,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    aoc::Register("day1", [](){ return std::make_unique<day1::Solution>(); });
+    REGISTER(day1, day1::Solution);
 
     std::string day(argv[1]);
 

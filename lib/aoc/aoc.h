@@ -4,6 +4,8 @@
 #include <vector>
 #include <functional>
 
+#define REGISTER(_DAY, _CLASS) aoc::Register(#_DAY, [](){ return std::make_unique<_CLASS>(); });
+
 namespace aoc
 {
     std::tuple<std::string, std::string> GetSolutionForDay(const std::string& day);
