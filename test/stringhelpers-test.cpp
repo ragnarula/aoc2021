@@ -20,3 +20,15 @@ TEST(Tokenize, ResutlsEmptyArrayIfInputOnlyHasOneDelimiter)
     auto result = aoc::Tokenize("\n", "\n");
     ASSERT_EQ(result.size(), 0);
 }
+
+TEST(HasPrefix, ReturnsTrueWhenStringHasPrefix)
+{
+    auto result = aoc::HasPrefix("forward 10", "forward");
+    EXPECT_EQ(result, true);
+}
+
+TEST(HasPrefix, ReturnsFalseWhenStringDoesntHavePrefix)
+{
+    auto result = aoc::HasPrefix("down 10", "forward");
+    EXPECT_EQ(result, false);
+}

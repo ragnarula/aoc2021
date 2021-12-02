@@ -25,4 +25,9 @@ std::vector<std::string> Tokenize(std::string input, std::string delim)
     
     return results;
 }
+
+bool HasPrefix(const std::string& str, const std::string& prefix) 
+{
+    return !str.compare(0, prefix.size(), prefix);
+}
 }

@@ -2,6 +2,7 @@
 #include <string>
 #include "aoc/aoc.h"
 #include "day1/day1.h"
+#include "day2/day2.h"
 
 int main(int argc, char *argv[])
 {   
@@ -11,6 +12,7 @@ int main(int argc, char *argv[])
     }
 
     REGISTER(day1, day1::Solution);
+    REGISTER(day2, day2::Solution);
 
     std::string day(argv[1]);
 
