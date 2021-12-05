@@ -5,6 +5,7 @@ add_executable(tests
     day2-test.cpp
     day3-test.cpp
     day4-test.cpp
+    day5-test.cpp
 )
 
 target_link_libraries(tests aoc-lib gtest gtest_main gmock)
