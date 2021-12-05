@@ -1,6 +1,3 @@
-#include <vector>
-#include <string>
-
 #include "gtest/gtest.h"
 #include "day3/day3.h"
 #include "aoc/aoc.h"
