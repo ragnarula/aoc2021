@@ -12,13 +12,17 @@ namespace
     std::vector<std::string> GetLinesOfFile(std::string path)
     {
         std::ifstream file(path);
+        std::vector<std::string> lines;
         std::string input;
         if(file.is_open())
         {
-            std::getline(file, input, '\0');
+            while(std::getline(file, input))
+            {
+                lines.push_back(std::move(input));
+            }
         }
 
-        return aoc::Tokenize(input, "\n");
+        return lines;
     }
 }
 
