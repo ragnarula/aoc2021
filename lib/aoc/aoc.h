@@ -8,6 +8,11 @@
 
 namespace aoc
 {
+    std::unique_ptr<class ISolution> GetSolution(const std::string& day);
+
+    enum class EPart {First, Second};
+    std::vector<std::string> GetInputForDay(const std::string& day, EPart part = EPart::First);
+
     std::tuple<std::string, std::string> GetSolutionForDay(const std::string& day);
 
     class ISolution

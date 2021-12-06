@@ -26,8 +26,13 @@ TEST(Aoc, GetsSolutionsFromRegisteredSolutionForDay)
         EXPECT_CALL(*source.get(), GetSecond).WillRepeatedly(Return("second"));
         return source;
     });
+    
+    std::vector<std::string> input = { "SomeInput" };
+    auto solution = aoc::GetSolution("day1");
 
-    auto [firstRes, secondRes] = aoc::GetSolutionForDay("day1");
-    ASSERT_EQ(firstRes, "first");
-    ASSERT_EQ(secondRes, "second");
+    auto first = solution->GetFirst(input);
+    auto second = solution->GetSecond(input);
+
+    ASSERT_EQ(first, "first");
+    ASSERT_EQ(second, "second");
 }

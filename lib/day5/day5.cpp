@@ -73,7 +73,7 @@ namespace day5
         return std::to_string(count);
     }
 
-        Line::Line(const std::string& input) 
+    Line::Line(const std::string& input) 
     {
         *this = ParseLine(input);
     }
