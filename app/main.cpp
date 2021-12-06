@@ -6,6 +6,7 @@
 #include "day3/day3.h"
 #include "day4/day4.h"
 #include "day5/day5.h"
+#include "day6/day6.h"
 
 int main(int argc, char *argv[])
 {   
@@ -19,6 +20,7 @@ int main(int argc, char *argv[])
     REGISTER(day3, day3::Solution);
     REGISTER(day4, day4::Solution);
     REGISTER(day5, day5::Solution);
+    REGISTER(day6, day6::Solution);
 
     std::string day(argv[1]);
 

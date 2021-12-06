@@ -6,6 +6,8 @@
 
 namespace day6
 {
+    void Step(std::vector<int>& fish);
+
     class Solution : public aoc::ISolution
     {
     public:
