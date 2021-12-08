@@ -6,6 +6,7 @@ add_library(aoc-lib STATIC
     day4/day4.cpp
     day5/day5.cpp
     day6/day6.cpp
+    day7/day7.cpp
     stringhelpers.cpp
 )
 
